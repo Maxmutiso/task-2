@@ -1,0 +1,50 @@
+package task.pkg2;
+    import java.util.Scanner;
+
+public class Task2  {
+	 // method with no return type and no parameter
+    public static void largeSmall() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter 1st number");
+        int num1 = input.nextInt();
+        System.out.println(" ");
+
+        System.out.println("Enter 2nd number");
+        int num2 = input.nextInt();
+        System.out.println(" ");
+
+        System.out.println("Enter 3rd number");
+        int num3 = input.nextInt();
+        System.out.println(" ");
+
+        // This is to display the largest number
+        if (num1 > num2 && num1 > num3) {
+            System.out.println("The largest number: " + num1);
+            System.out.print(num1 + " is your largest and ");
+        } else if (num2 > num1 && num2 > num3) {
+            System.out.println("The largest number: " + num2);
+            System.out.print(num2 + " is your largest and ");
+        } else {
+            System.out.println("The largest number: " + num3);
+            System.out.print(num3 + " is your largest and ");
+        }
+
+        //this is to  display smallest number
+        if (num1 < num2 && num1 < num3) {
+            System.out.println(num1 + " smallest number");
+            System.out.println("The smallest number: " + num1);
+        } else if (num2 < num1 && num2 < num3) {
+            System.out.println(num2 + " smallest number");
+            System.out.println("The smallest number: " + num2);
+        } else {
+            System.out.println(num3 + " smallest number");
+            System.out.println("The smallest number: " + num3);
+        }
+    }
+
+    public static void main(String[] args) {
+        // calling the method in the main method
+        largeSmall();
+    }
+}
